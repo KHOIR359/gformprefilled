@@ -1,0 +1,21 @@
+{
+    "name": "Khoir Bot Form",
+    "version": "1.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "128": "images/settings-black.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://docs.google.com/*"],
+        "run_at": "document_start",
+        "js": ["library/jquery.js", "content/content.js"],
+        "css": ["content/content.css"]
+    }],
+    "background": {"scripts":["background.js"]},
+    "browser_action": {
+        "default_icon": "images/settings.png",
+        "default_popup": "popup.html",
+        "default_title": "Khoir Extention"
+    },
+    "permissions": ["storage", "tabs"]
+}

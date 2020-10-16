@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <table class="table table-strip mb-0">
+        <thead>
+            <tr>
+                <th><img width="20px" src="images/settings.png" alt="logo"></th>
+                <th style="text-align: center" colspan="2">KHOIR BOT FORM</th>
+
+            </tr>
+            <tr>
+                <th scope="col">Option</th>
+                <th scope="col">Url</th>
+                <th scope="col">Function</th>
+                <th scope="col">On/Off</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Google Form</td>
+                <td>Input Bot</td>
+                <td>
+                    <label class="switch">
+                        <input id="activate" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container mb-3">
+
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" class="form-control" name="nama" id="nama" aria-describedby="helpId" placeholder="nama">
+        </div>
+        <div class="form-group">
+            <label for="kelas">Kelas</label>
+            <input type="text" class="form-control" name="kelas" id="kelas" aria-describedby="helpId" placeholder="XI MIPA 1">
+        </div>
+        <div class="form-group">
+            <label for="keterangan">Keterangan</label>
+            <input type="text" class="form-control" name="keterangan" id="keterangan" aria-describedby="helpId" placeholder="hadir">
+        </div>
+        <button class="btn btn-success" id="save">Save</button>
+    </div>
+
+    <script src="library/jquery.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
